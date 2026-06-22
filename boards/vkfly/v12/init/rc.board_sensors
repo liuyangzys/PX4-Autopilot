@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# board specific sensors init
+#------------------------------------------------------------------------------
+
+board_adc start
+
+# Pre-configure the Unicore GPS on USART2 before the generic GPS driver starts.
+v12_gpsinit unicore
+
+# Internal SPI BMI088
+bmi088 -A -R 6 -s -b 4 start
+bmi088 -G -R 6 -s -b 4 start
+
+# Internal SPI ICM42688P or ICM40609D
+if ! icm40609d -R 0 -s -b 2 -q start
+then
+	icm42688p -R 0 -s -b 2 start
+fi
+
+# Internal SPI baro
+if ! ms5611 -s -b 2 -q start
+then
+	spl06 -s -b 2 start
+fi
+
+# Internal GPIO bitbang I2C LIS2MDL
+# iis2mdc -I -b 5 start
