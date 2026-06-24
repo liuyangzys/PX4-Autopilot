@@ -496,3 +496,23 @@ CONFIG:
       buildType: MinSizeRel
       settings:
         CONFIG: x-mav_ap-h743v2_default
+    vkfly_v12_bootloader:
+      short: vkfly_v12_bootloader
+      buildType: MinSizeRel
+      settings:
+        CONFIG: vkfly_v12_bootloader
+    vkfly_v12_default:
+      short: vkfly_v12
+      buildType: MinSizeRel
+      settings:
+        CONFIG: vkfly_v12_default
+    vkfly_v10pro_bootloader:
+      short: vkfly_v10pro_bootloader
+      buildType: MinSizeRel
+      settings:
+        CONFIG: vkfly_v10pro_bootloader
+    vkfly_v10pro_default:
+      short: vkfly_v10pro
+      buildType: MinSizeRel
+      settings:
+        CONFIG: vkfly_v10pro_default
