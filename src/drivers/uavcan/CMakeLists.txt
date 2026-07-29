@@ -146,9 +146,11 @@ px4_add_module(
 	SRCS
 		arming_status.cpp
 		arming_status.hpp
-		beep.cpp
-		beep.hpp
-		remoteid.cpp
+	beep.cpp
+	beep.hpp
+	global_navigation.cpp
+	global_navigation.hpp
+	remoteid.cpp
 		remoteid.hpp
 		rgbled.cpp
 		rgbled.hpp

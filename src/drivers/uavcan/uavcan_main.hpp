@@ -67,6 +67,7 @@
 #endif
 
 #include "logmessage.hpp"
+#include "global_navigation.hpp"
 
 #if defined(CONFIG_UAVCAN_REMOTEID_CONTROLLER)
 #include "remoteid.hpp"
@@ -285,6 +286,7 @@ private:
 #endif
 
 	UavcanLogMessage                _log_message_controller;
+	UavcanGlobalNavigation           _global_navigation_controller;
 
 	uavcan::GlobalTimeSyncMaster	_time_sync_master;
 	uavcan::GlobalTimeSyncSlave	_time_sync_slave;
