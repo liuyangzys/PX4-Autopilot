@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# board specific defaults
+#------------------------------------------------------------------------------
+
+# GPS1 is a Unicore receiver on USART2 (/dev/ttyS1), parsed through the NMEA driver.
+param set-default GPS_1_CONFIG 201
+param set-default GPS_1_PROTOCOL 6
+# param set-default SER_GPS1_BAUD 460800
+
+# TEL1 is a MAVLink port on USART1 (/dev/ttyS0).
+# param set-default SER_TEL1_BAUD 115200
+
+# UART7 (/dev/ttyS6) is a fixed SBUS RC input.
+param set-default RC_INPUT_PROTO 2
+
+# Disable power supply checks, as the board does not have a power supply connected to it.
+param set-default CBRK_SUPPLY_CHK 894281
