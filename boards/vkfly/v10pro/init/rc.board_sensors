@@ -5,9 +5,6 @@
 
 board_adc start
 
-# Pre-configure the Unicore GPS on USART2 before the generic GPS driver starts.
-rtk_gpsinit unicore
-
 # Internal SPI BMI088
 bmi088 -A -R 2 -s -b 4 start
 bmi088 -G -R 2 -s -b 4 start
