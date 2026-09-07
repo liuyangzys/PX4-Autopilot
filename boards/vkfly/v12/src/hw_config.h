@@ -98,7 +98,7 @@
 #define BOARD_FLASH_SIZE               (_FLASH_KBYTES * 1024)
 #define BOOT_DELAY_ADDRESS             0x000002a0
 
-#define OSC_FREQ                       8
+#define OSC_FREQ                       16
 
 #define BOARD_PIN_LED_ACTIVITY         GPIO_LED_BLUE // BLUE
 #define BOARD_PIN_LED_BOOTLOADER       GPIO_LED_GREEN // GREEN
